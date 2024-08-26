@@ -10,7 +10,14 @@
 }
 
 .btn-primary{
-    
+    border:none;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    padding:20px 25px ;
+    background-color: #FF900E;
+    color: #FFF;
+    cursor: pointer;
+    /* margin-bottom: 50px;  */
 }
  /* header styles */
 header{
@@ -47,7 +54,7 @@ nav li a{
 /* Banner styles */
 
 .banner-content{
-    max-width: 800px;
+    max-width: 800px; 
     text-align: center;
     margin: 0 auto;
 }
@@ -58,4 +65,37 @@ nav li a{
 }
 .banner-description{
     color: #727272;
+}
+.banner img{
+    margin-top: 20px;
+    width: 100%;
+}
+/* responsive media queries */
+
+@media screen and (max-width: 576px){
+    header{
+        padding: 20px;
+    }
+   .container,
+    nav,
+    nav > ul
+    {
+        flex-direction: column;
+    }
+    
+}
+
+/* Tablet or medium devices */
+@media screen and (min-width: 576px) and (max-width: 960px){
+    header{
+        padding: 50px;
+    }
+    .container,
+    nav{
+        flex-direction: column;
+    }
+    .nav-title{
+        text-align: center;
+    }
+    
 }
