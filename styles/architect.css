@@ -103,31 +103,40 @@ main{
 }
 
 /* features section styles */
-
-#features-section-title{
-    border-radius: 5px solid #FF900E;
-    padding-left: 20px;
-     
+.features{
+    margin-top: 100px;
+    display: flex;
+    gap: 140px; 
+    
 }
-.features-card{
+.features .section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.features-content .card{
     border-radius: 8px;
     box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
     padding: 30px;
     margin-bottom: 40px;
 }
-.features-card .feature-title{
-    
+.features-content .card, .section-title{
     font-size: 1.25rem;
     font-weight: 600px;
 }
-.features, .display-flex{
+.ten-year-badge{
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 342px;
+}
+.ten-year-badge h2{
+    font-size: 4.25rem;
+}
+/* .features, .display-flex{
      display: flex;
      flex-direction: row;
-}
-.features{
-    gap: 140px; 
-    
-}
+} */
+
  /*facts styles  */
  .facts-card-container{
     display: flex;
