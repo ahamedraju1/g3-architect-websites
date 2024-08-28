@@ -128,9 +128,21 @@ main{
     background: #FF900E;
     color: #FFF;
     width: 342px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
 }
 .ten-year-badge h2{
     font-size: 4.25rem;
+    margin: 0;
+}
+.ten-year-badge p{
+    font-size: 1.25rem;
+}
+.features-img {
+    height: 100%;
+    margin-left: 90px;
 }
 /* .features, .display-flex{
      display: flex;
@@ -151,7 +163,7 @@ main{
  }
  .facts-card-container .card{
     width: 150px;
- }
+ } 
  .facts--card-container, .card-title{
     font-weight: 600px;
     font-size: 1.25rem;
@@ -182,13 +194,13 @@ main{
 
 @media screen and (max-width: 576px){
     header{
-        padding: 20px;
-       
+        padding: 20px;   
     }
    .container,
     nav,
     nav > ul,
     .teams-container,
+    .features,
     .facts-card-container,
     .sponsors-image-container
     {
@@ -207,6 +219,17 @@ main{
         padding-left: 20px;
         padding-right: 20px;
     }
+    .features-content .card{
+        max-width: 300px;
+    }
+    .features-img img{
+        margin-left: 0;
+        max-width: 300px;
+    }
+    .ten-year-badge{
+        position: static;
+        max-width: 300px;
+    }
     .facts-card-container{
         gap: 20px;
     }
@@ -221,6 +244,7 @@ main{
     .container,
     nav,
     .teams-container,
+    .features,
     .facts-card-container
     {
         flex-direction: column;
@@ -231,6 +255,12 @@ main{
     .teams-container{
         align-items: start;
         
+    }
+    .features-content .card{
+        max-width: 700px;
+    }
+    .features-img img{
+        max-width: 700px;
     }
     .facts-card-container{
         gap: 10px;
