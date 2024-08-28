@@ -189,7 +189,14 @@ main{
  .sponsors-image-container img{
     width: 165px;
  }
-
+/* footer styles */
+footer{
+    text-align: center;
+    font-size: 1.25rem;
+    background: rgb(255, 144, 0, 0.14);
+    padding: 20px 30px;
+    font-weight: 700px;
+}
 /* responsive media queries */
 
 @media screen and (max-width: 576px){
